@@ -1,0 +1,48 @@
+<html ng-app="sko.common.jquery">
+<head>
+	<title>jQuery factory example</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		canvas {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+	</style>
+</head>
+<body ng-controller="DemoCtrl">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Simple demo</h2>
+				<p>
+					Loads the p5 library using jQuery's <code>$.getScript</code> method and 
+					draws random shapes.
+				</p>
+			</div><!-- .col-sm-12 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="angular-jquery.js"></script>
+  <script>
+  	angular.module('sko.common.jquery')
+  		.controller('DemoCtrl', function ($scope, $) {
+        $.getScript('http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.20/p5.js', function() {
+        	window.setup = function() {
+					  createCanvas($(window).width(), $(window).height());
+					  fill('rgba(0,255,0, 0.1)');
+					  noStroke();
+					};
+        	window.draw = function() {
+        		var size = Math.random()*100;
+					  ellipse(Math.random()*width, Math.random()*height, size, size);
+					};
+        });
+      });
+  </script>
+</body>
+</html>

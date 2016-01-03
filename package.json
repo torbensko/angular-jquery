@@ -1,0 +1,27 @@
+{
+  "name": "angular-jquery",
+  "description": "Import jQuery like any other dependency.",
+  "main": "angular-jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torbensko/angular-jquery.git"
+  },
+  "keywords": [
+    "jquery",
+    "angular",
+    "factory"
+  ],
+  "author": "Torben Sko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torbensko/angular-jquery/issues"
+  },
+  "homepage": "https://github.com/torbensko/angular-jquery#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  }
+}
