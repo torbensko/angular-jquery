@@ -2,7 +2,7 @@
 
 Allows you to import jQuery like any other Angular dependency.
 
-[Demo](http://torbensko-demos.s3.amazonaws.com/angular-jquery/demo.html)
+View [demo](http://torbensko-demos.s3.amazonaws.com/angular-jquery/demo.html).
 
 
 
