@@ -7,7 +7,7 @@
  * # jquery
  * Factory in the clientApp.
  */
-angular.module('sko.common.jquery', [])
+angular.module('sko.jquery', [])
   .factory('$', function ($window) {
     return $window.jQuery;
   });
