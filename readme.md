@@ -8,25 +8,25 @@ Allows you to import jQuery like any other Angular dependency.
 
 ## Install and usage
 
--   Add via bower:
+Add via bower:
 
-        bower install torbensko/angular-jquery --save
+    bower install torbensko/angular-jquery --save
 
--   Add the dependency:
+Add the dependency:
 
-        sko.jquery
+    sko.jquery
 
--   In your service, controller or directive you can use jQuery by adding the dependency `$`.
+In your service, controller or directive you can use jQuery by adding the dependency `$`.
 
-    For example:
+For example:
 
-        .controller('DemoCtrl', function ($scope, $) {
-          $.getScript('URL', function() {
-            // do something
-          });
-        });
+    .controller('DemoCtrl', function ($scope, $) {
+      $.getScript('URL', function() {
+        // do something
+      });
+    });
 
-    See `demo.html` for more instructions.
+See `demo.html` for more instructions.
 
 
 ## Development
